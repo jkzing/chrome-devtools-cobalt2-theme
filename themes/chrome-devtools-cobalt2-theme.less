@@ -21,6 +21,9 @@
 @silver-gray: #CCCCCC;
 @orange: #FF9D00;
 @comment-blue: #0088FF;
+@left-bar-background: #15232D;
+@left-bar-bg-selected: #35434D;
+@tab-bar-background: #24323B;
 
 @white  : hsl(0, 100%, 100%);
 @grey   : hsl(0,   0%,  80%);
@@ -28,7 +31,7 @@
 
 // Global Settings
 @text-height      : 14px;
-@global-accent    : @alpha;
+@global-accent    : @echo;
 @global-arrow     : #AAB0AF;
 @global-background: #193549;
 @global-boxshadow : rgba(17,17,17,.6);
@@ -36,7 +39,7 @@
 @global-hover     : lighten(@global-background, 5%);
 @global-input     : @black;
 @global-selected  : #364c3b;
-@global-text      : @delta;
+@global-text      : #BEBEBE;
 @global-label     : #626262;
 @global-warn      : #db0;
 @global-error     : #f66;
@@ -105,8 +108,8 @@
 @xml-tag               : @bravo;
 
 // Tabbed Header Configuration
-@tab-color-top      : lighten(@global-background, 18%);
-@tab-color-bottom   : lighten(@global-background, 8%);
+@tab-color-top      : @tab-bar-background;
+@tab-color-bottom   : @tab-bar-background;
 @tab-highlighted    : @global-accent;
 @tab-label          : #999;
 @tab-label-selected : #f8f8f8;
