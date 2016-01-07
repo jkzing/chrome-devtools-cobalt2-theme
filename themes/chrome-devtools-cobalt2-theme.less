@@ -6,10 +6,21 @@
 
 // Default colours
 @alpha  : hsl( 78,  92%, 47%); //* light green */
-@bravo  : #E1EFFF; //* dark red    */ //cobalt2
+@bravo  : #9EFFFF; //* dark red    */
 @charlie: hsl(187,  71%, 68%); //* light blue  */
 @delta  : hsl(262, 100%, 73%); //* purple      */
 @echo   : hsl( 53,  66%, 71%); //* yellow      */
+
+// cobalt2 colors
+@blank: #000000;
+@green: #3AD900;
+@light-green: #70FFBB;
+@light-red: #EB939A;
+@dark-red: #FF5460;
+@gray-white: #FFFFFF;
+@silver-gray: #CCCCCC;
+@orange: #FF9D00;
+@comment-blue: #0088FF;
 
 @white  : hsl(0, 100%, 100%);
 @grey   : hsl(0,   0%,  80%);
@@ -19,7 +30,7 @@
 @text-height      : 14px;
 @global-accent    : @alpha;
 @global-arrow     : #AAB0AF;
-@global-background: #193549; //cobalt2
+@global-background: #193549;
 @global-boxshadow : rgba(17,17,17,.6);
 @global-divider   : lighten(@global-background, 5%);
 @global-hover     : lighten(@global-background, 5%);
@@ -32,24 +43,24 @@
 @global-textshadow: @black;
 
 // JavaScript
-@js-atom      : #000000;
-@js-attribute : #000000;
-@js-builtin   : #000000;
-@js-comment   : #0088FF; //cobalt2
-@js-def       : #000000; //@bravo;
-@js-error     : #000000;
-@js-header    : #000000;
-@js-hr        : #000000;
-@js-keyword   : #FF9D00; //cobalt2
-@js-link      : #000000;
-@js-meta      : #000000;
-@js-number    : #000000;
-@js-operator  : #000000;
-@js-property  : #000000;
-@js-string    : #000000;
-@js-tag       : #000000; //@bravo;
-@js-variable  : #FFEE80;
-@js-variable-2: #FFFFFF;
+@js-atom      : @dark-red;
+@js-attribute : @blank;
+@js-builtin   : @blank;
+@js-comment   : @comment-blue;
+@js-def       : @silver-gray;
+@js-error     : @blank;
+@js-header    : @blank;
+@js-hr        : @blank;
+@js-keyword   : @orange;
+@js-link      : @blank;
+@js-meta      : @blank;
+@js-number    : @dark-red;
+@js-operator  : @orange;
+@js-property  : @light-red;
+@js-string    : @green;
+@js-tag       : @blank;
+@js-variable  : @light-green;
+@js-variable-2: @gray-white;
 
 // JavaScript Objects
 @js-obj-array    : #7c7c7c;
@@ -60,7 +71,7 @@
 @js-obj-preview  : #ddd;
 @js-obj-regexp   : #ff54e8;
 @js-obj-string   : #ff8737;
-@js-obj-undefined: #ad4e4e;
+@js-obj-undefined: @dark-red;
 
 // CSS
 @css-at-rule   : #b094bb;
@@ -81,8 +92,8 @@
 @css-variable-2: @alpha;
 
 // HTML Highlighting
-@xml-attribute         : @alpha;
-@xml-comment           : #7c7c7c;
+@xml-attribute         : @echo;
+@xml-comment           : @comment-blue;
 @xml-error             : #bf4c4c;
 @xml-iframe-root       : #db0;
 @xml-js-node           : #c2c3c3;
@@ -90,7 +101,7 @@
 @xml-pseudo            : #49a5d2;
 @xml-pseudo-highlighted: #a6371a;
 @xml-shadow-root       : #db0;
-@xml-string            : @echo;
+@xml-string            : @green;
 @xml-tag               : @bravo;
 
 // Tabbed Header Configuration
